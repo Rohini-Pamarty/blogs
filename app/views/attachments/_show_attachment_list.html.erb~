@@ -27,7 +27,7 @@
 </ul>
 <br style="clear:both;" />
 <div style="float:right;margin-bottom:10px;">
-<%#= will_paginate @attachments, :class => "pagination", :previous_label => "&laquo; previous",  :next_label => "next &raquo;", :renderer => 'RemoteLinkRenderer' %>
+<%= will_paginate @attachments, :class => "pagination", :previous_label => "&laquo; previous",  :next_label => "next &raquo;", :renderer => 'RemoteLinkRenderer' %>
 </div>
 <% else %>
 No <%= params[ :media ]%> Uploaded Yet.
