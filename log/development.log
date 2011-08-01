@@ -15135,3 +15135,155 @@ ActionController::RoutingError (No route matches "/tinymce/home/nyros/July28/tem
   
 
 Rendered /home/nyros/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/nyros/Tinymce/railsblog/vendor/plugins/jrails/rails/init.rb. (called from <top (required)> at /home/nyros/Tinymce/railsblog/config/environment.rb:5)
+DEPRECATION WARNING: reset_javascript_include_default is deprecated. Please manipulate config.action_view.javascript_expansions[:defaults] directly. (called from block in <class:Plugin> at /home/nyros/Tinymce/railsblog/vendor/plugins/jrails/rails/init.rb:14)
+DEPRECATION WARNING: RAILS_ENV is deprecated. Please use ::Rails.env. (called from block in <class:Plugin> at /home/nyros/Tinymce/railsblog/vendor/plugins/jrails/rails/init.rb:16)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/nyros/Tinymce/railsblog/vendor/plugins/paperclip/rails/init.rb. (called from <top (required)> at /home/nyros/Tinymce/railsblog/config/environment.rb:5)
+DEPRECATION WARNING: :name_prefix was deprecated in the new router syntax. Use :as instead. (called from block in <top (required)> at /home/nyros/Tinymce/railsblog/config/routes.rb:3)
+DEPRECATION WARNING: :name_prefix was deprecated in the new router syntax. Use :as instead. (called from block in <top (required)> at /home/nyros/Tinymce/railsblog/config/routes.rb:3)
+DEPRECATION WARNING: :name_prefix was deprecated in the new router syntax. Use :as instead. (called from block in <top (required)> at /home/nyros/Tinymce/railsblog/config/routes.rb:5)
+DEPRECATION WARNING: :name_prefix was deprecated in the new router syntax. Use :as instead. (called from block in <top (required)> at /home/nyros/Tinymce/railsblog/config/routes.rb:5)
+DEPRECATION WARNING: ActionController::Routing::Routes is deprecated. Instead, use Rails.application.routes. (called from <top (required)> at /home/nyros/Tinymce/railsblog/vendor/plugins/rails_tiny_mce/config/routes.rb:1)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-01 17:32:29 +0530
+  Processing by PostsController#index as HTML
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `posts_tags`[0m
+  [1m[35mSQL (0.8ms)[0m  SHOW TABLES
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM `comments` WHERE (`comments`.post_id = 1)) AS subquery[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM `comments` WHERE (`comments`.post_id = 2)) AS subquery
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM `comments` WHERE (`comments`.post_id = 3)) AS subquery[0m
+  [1m[35mSQL (4.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM `comments` WHERE (`comments`.post_id = 4)) AS subquery
+  [1m[36mSQL (2.4ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM `comments` WHERE (`comments`.post_id = 5)) AS subquery[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM `comments` WHERE (`comments`.post_id = 6)) AS subquery
+Rendered posts/index.html.erb within layouts/application (1029.5ms)
+Completed 200 OK in 1158ms (Views: 1045.3ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/tinymce/home/nyros/July28/temperwebtemp14785/html/images/registration.png" for 127.0.0.1 at 2011-08-01 17:32:31 +0530
+
+ActionController::RoutingError (No route matches "/tinymce/home/nyros/July28/temperwebtemp14785/html/images/registration.png"):
+  
+
+Rendered /home/nyros/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/tinymce/home/nyros/July28/temperwebtemp14785/html/images/registration.png" for 127.0.0.1 at 2011-08-01 17:32:31 +0530
+
+ActionController::RoutingError (No route matches "/tinymce/home/nyros/July28/temperwebtemp14785/html/images/registration.png"):
+  
+
+Rendered /home/nyros/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2011-08-01 17:33:21 +0530
+  Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (6.7ms)[0m  describe `posts_tags`
+  [1m[36mTag Load (1.7ms)[0m  [1mSELECT `tags`.* FROM `tags`[0m
+  [1m[35mSQL (1.2ms)[0m  describe `posts_tags`
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  COMMIT
+Rendered posts/_form.html.erb (34.0ms)
+Rendered posts/new.html.erb within layouts/application (53.5ms)
+Completed 200 OK in 316ms (Views: 77.0ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/attachments/manage?media=print&_=1312200206486" for 127.0.0.1 at 2011-08-01 17:33:26 +0530
+  Processing by AttachmentsController#manage as JS
+  Parameters: {"media"=>"print", "_"=>"1312200206486"}
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from <class:TinyPrint> at /home/nyros/Tinymce/railsblog/app/models/tiny_print.rb:9)
+  [1m[36mTinyPrint Load (0.3ms)[0m  [1mSELECT `tiny_prints`.* FROM `tiny_prints` ORDER BY created_at DESC LIMIT 0, 10[0m
+Rendered attachments/_show_attachment_list.html.erb (531.5ms)
+Completed 200 OK in 721ms (Views: 641.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/attachments/manage?media=print&_=1312200284751" for 127.0.0.1 at 2011-08-01 17:34:44 +0530
+  Processing by AttachmentsController#manage as JS
+  Parameters: {"media"=>"print", "_"=>"1312200284751"}
+  [1m[35mTinyPrint Load (1.1ms)[0m  SELECT `tiny_prints`.* FROM `tiny_prints` ORDER BY created_at DESC LIMIT 0, 10
+Rendered attachments/_show_attachment_list.html.erb (489.9ms)
+Completed 200 OK in 707ms (Views: 599.7ms | ActiveRecord: 1.1ms)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/nyros/Tinymce/railsblog/vendor/plugins/jrails/rails/init.rb. (called from <top (required)> at /home/nyros/Tinymce/railsblog/config/environment.rb:5)
+DEPRECATION WARNING: reset_javascript_include_default is deprecated. Please manipulate config.action_view.javascript_expansions[:defaults] directly. (called from block in <class:Plugin> at /home/nyros/Tinymce/railsblog/vendor/plugins/jrails/rails/init.rb:14)
+DEPRECATION WARNING: RAILS_ENV is deprecated. Please use ::Rails.env. (called from block in <class:Plugin> at /home/nyros/Tinymce/railsblog/vendor/plugins/jrails/rails/init.rb:16)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/nyros/Tinymce/railsblog/vendor/plugins/paperclip/rails/init.rb. (called from <top (required)> at /home/nyros/Tinymce/railsblog/config/environment.rb:5)
+DEPRECATION WARNING: :name_prefix was deprecated in the new router syntax. Use :as instead. (called from block in <top (required)> at /home/nyros/Tinymce/railsblog/config/routes.rb:3)
+DEPRECATION WARNING: :name_prefix was deprecated in the new router syntax. Use :as instead. (called from block in <top (required)> at /home/nyros/Tinymce/railsblog/config/routes.rb:3)
+DEPRECATION WARNING: :name_prefix was deprecated in the new router syntax. Use :as instead. (called from block in <top (required)> at /home/nyros/Tinymce/railsblog/config/routes.rb:5)
+DEPRECATION WARNING: :name_prefix was deprecated in the new router syntax. Use :as instead. (called from block in <top (required)> at /home/nyros/Tinymce/railsblog/config/routes.rb:5)
+DEPRECATION WARNING: ActionController::Routing::Routes is deprecated. Instead, use Rails.application.routes. (called from <top (required)> at /home/nyros/Tinymce/railsblog/vendor/plugins/rails_tiny_mce/config/routes.rb:1)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2011-08-01 17:39:24 +0530
+  Processing by PostsController#new as HTML
+  [1m[36mSQL (0.8ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (4.9ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `posts_tags`[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT `tags`.* FROM `tags`
+  [1m[36mSQL (4.0ms)[0m  [1mdescribe `posts_tags`[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mCOMMIT[0m
+Rendered posts/_form.html.erb (28.0ms)
+Rendered posts/new.html.erb within layouts/application (50.6ms)
+Completed 200 OK in 604ms (Views: 84.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/attachments/manage?media=print&_=1312200571604" for 127.0.0.1 at 2011-08-01 17:39:31 +0530
+  Processing by AttachmentsController#manage as JS
+  Parameters: {"media"=>"print", "_"=>"1312200571604"}
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from <class:TinyPrint> at /home/nyros/Tinymce/railsblog/app/models/tiny_print.rb:9)
+  [1m[35mTinyPrint Load (0.3ms)[0m  SELECT `tiny_prints`.* FROM `tiny_prints` ORDER BY created_at DESC LIMIT 0, 10
+Rendered attachments/_show_attachment_list.html.erb (602.1ms)
+Completed 200 OK in 736ms (Views: 678.6ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/nyros/Tinymce/railsblog/vendor/plugins/jrails/rails/init.rb. (called from <top (required)> at /home/nyros/Tinymce/railsblog/config/environment.rb:5)
+DEPRECATION WARNING: reset_javascript_include_default is deprecated. Please manipulate config.action_view.javascript_expansions[:defaults] directly. (called from block in <class:Plugin> at /home/nyros/Tinymce/railsblog/vendor/plugins/jrails/rails/init.rb:14)
+DEPRECATION WARNING: RAILS_ENV is deprecated. Please use ::Rails.env. (called from block in <class:Plugin> at /home/nyros/Tinymce/railsblog/vendor/plugins/jrails/rails/init.rb:16)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/nyros/Tinymce/railsblog/vendor/plugins/paperclip/rails/init.rb. (called from <top (required)> at /home/nyros/Tinymce/railsblog/config/environment.rb:5)
+DEPRECATION WARNING: :name_prefix was deprecated in the new router syntax. Use :as instead. (called from block in <top (required)> at /home/nyros/Tinymce/railsblog/config/routes.rb:3)
+DEPRECATION WARNING: :name_prefix was deprecated in the new router syntax. Use :as instead. (called from block in <top (required)> at /home/nyros/Tinymce/railsblog/config/routes.rb:3)
+DEPRECATION WARNING: :name_prefix was deprecated in the new router syntax. Use :as instead. (called from block in <top (required)> at /home/nyros/Tinymce/railsblog/config/routes.rb:5)
+DEPRECATION WARNING: :name_prefix was deprecated in the new router syntax. Use :as instead. (called from block in <top (required)> at /home/nyros/Tinymce/railsblog/config/routes.rb:5)
+DEPRECATION WARNING: ActionController::Routing::Routes is deprecated. Instead, use Rails.application.routes. (called from <top (required)> at /home/nyros/Tinymce/railsblog/vendor/plugins/rails_tiny_mce/config/routes.rb:1)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2011-08-01 17:41:07 +0530
+  Processing by PostsController#new as HTML
+  [1m[36mSQL (2.1ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mSQL (4.8ms)[0m  [1mdescribe `posts_tags`[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT `tags`.* FROM `tags`
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `posts_tags`[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+Rendered posts/_form.html.erb (28.5ms)
+Rendered posts/new.html.erb within layouts/application (56.3ms)
+Completed 200 OK in 496ms (Views: 84.8ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2011-08-01 17:41:19 +0530
+  Processing by PostsController#new as HTML
+  [1m[35mUser Load (7.3ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mSQL (5.9ms)[0m  [1mdescribe `posts_tags`[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags`
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `posts_tags`[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+Rendered posts/_form.html.erb (27.2ms)
+Rendered posts/new.html.erb within layouts/application (48.9ms)
+Completed 200 OK in 396ms (Views: 88.4ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2011-08-01 17:41:29 +0530
+  Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `posts_tags`[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags`
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `posts_tags`[0m
+  [1m[35mSQL (0.8ms)[0m  BEGIN
+  [1m[36mSQL (3.5ms)[0m  [1mCOMMIT[0m
+Rendered posts/_form.html.erb (26.9ms)
+Rendered posts/new.html.erb within layouts/application (53.8ms)
+Completed 200 OK in 378ms (Views: 74.5ms | ActiveRecord: 7.2ms)
