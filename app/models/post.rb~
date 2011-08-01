@@ -5,5 +5,6 @@ validates_presence_of:title, :body
 def imagepath 
 match = body.match(/img src="(.+)" border/)  if match 
 end
-#has_attached_file :image, :storage => :s3, :s3_credentials => "#{RAILS_ROOT}/config/s3.yml", :path => "/rohini/images/:style/:id/:filename"
+:storage => :s3, :s3_credentials => "#{RAILS_ROOT}/config/s3.yml", :path => "/rohini/images/:style/:id/:filename", :default_url => "/rohini/images/:style/:id/:filename"
+
 end
