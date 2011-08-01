@@ -6,7 +6,7 @@ class TinyPrint < ActiveRecord::Base
 	               :medium_thumb => [ "100x100", :jpg ],
                  :large_thumb => [ "370x370", :jpg ],
 	               :detail_preview => [ "450x338", :jpg ] },
-	 :storage => :s3, :s3_credentials => "#{RAILS_ROOT}/config/s3.yml", :path => "/rohini/images/:style/:id/:filename"
+	 :storage => :s3, :s3_credentials => "#{RAILS_ROOT}/config/s3.yml", :path => "/rohini/images/:style/:id/:filename", :default_url => "/rohini/images/:style/:id/:filename"
     
 
 end
